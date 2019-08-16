@@ -12,7 +12,7 @@ gulp.task('sass', function() {
     return gulp.src('scss/*.s?ss')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
-            browsers: ['last 5 versions'],
+            browsers: ['last 2 versions'],
             cascade: false
         }))
  
